@@ -10,22 +10,33 @@
 - testing       contains testing files of the program
 ```
 
-### Resources Used
-```md
-- stackoverflow
-- junit, testfx, open-sourced images
-```
-
 ### Starting the Application (client-side)
 ```md
-Once the application is running, simply click the button for PLAY to start a game.
-Enter all necessary information based on the rules of the type of game started.
-Play the game and find instructions for the game on the main menu.
-```
+====================================================================================
+LOADING
+====================================================================================
+If goal is to run from IDE, simply clone this repo to desired location.
 
-### Assumptions
+FUTURE: downloading app to run standalone
+
+====================================================================================
+CONFIGURING
+====================================================================================
+If running directly from an IDE (intelliJ recommended), ensure all project
+structure is correct: Ensure dependecy imports from /lib are installed, mark data
+folders as resource roots (/data, /resources)
+
+FUTURE: running standalone application
+
+====================================================================================
+RUNNING
+====================================================================================
+If running directly from an IDE, simply run engine.MonopolyDriver
+
+====================================================================================
+
 ```md
-- 
+
 ```
 
 ### Bug Log
