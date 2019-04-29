@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="javafx-base-11.0.1-mac">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-base-11.0.1-mac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-controls-11.0.1-mac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-graphics-11.0.1-mac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-media-11.0.1-mac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-swing-11.0.1-mac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx/javafx_mac/javafx-web-11.0.1-mac.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
