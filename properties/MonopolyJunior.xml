@@ -1,0 +1,471 @@
+<MonopolyJr>
+
+    <BoardLayout>MonopolyJunior.csv</BoardLayout>
+
+    <Type>
+        <MonopolyType>Monopoly Junior</MonopolyType>
+    </Type>
+
+    <Dimensions>
+        <Horizontal>7</Horizontal>
+        <Vertical>7</Vertical>
+    </Dimensions>
+
+    <Background>
+        <BackgroundPath>background.jpg</BackgroundPath>
+    </Background>
+
+    <Box>
+        <BoxColor>#d32f2f</BoxColor>
+    </Box>
+
+    <NumPlayers>
+        <MaxPlayers>4</MaxPlayers>
+        <MinPlayers>2</MinPlayers>
+    </NumPlayers>
+
+    <Dice>
+        <DiceType>SixDice</DiceType>
+        <NumDie>1</NumDie>
+    </Dice>
+
+    <Decks>
+        <NumDecks>1</NumDecks>
+    </Decks>
+
+    <InitialFunds>
+        <Player>31</Player>
+    </InitialFunds>
+
+    <Dimensions>
+        <Horizontal>7</Horizontal>
+        <Vertical>7</Vertical>
+    </Dimensions>
+
+    <Deck>
+        <Name>Chance</Name>
+        <ActionCard>
+            <CardType>MoveCard</CardType>
+            <Type>Move</Type>
+            <TileIndex>7</TileIndex>
+            <Message>Advance to Pink Card</Message>
+        </ActionCard>
+        <ActionCard>
+            <CardType>GetOutOfJailCard</CardType>
+            <Type>GetOutOfJail</Type>
+            <Message>Get Out of Jail Free</Message>
+        </ActionCard>
+        <ActionCard>
+            <CardType>PayCard</CardType>
+            <Type>Pay</Type>
+            <Payer>Bank</Payer>
+            <Payee>CurrentPlayer</Payee>
+            <Amount>2</Amount>
+            <Message>Collect 2 dollars from the Bank</Message>
+        </ActionCard>
+        <ActionCard>
+            <CardType>PayCard</CardType>
+            <Type>Pay</Type>
+            <Payer>Everyone</Payer>
+            <Payee>CurrentPlayer</Payee>
+            <Amount>1</Amount>
+            <Message>Everyone gives you 1 dollar. Happy birthday! </Message>
+        </ActionCard>
+        <ActionCard>
+            <CardType>PayCard</CardType>
+            <Type>Pay</Type>
+            <Payer>CurrentPlayer</Payer>
+            <Payee>Bank</Payee>
+            <Amount>2</Amount>
+            <Message>Pay 2 dollars to the bank.</Message>
+        </ActionCard>
+        <ActionCard>
+            <CardType>MoveCard</CardType>
+            <Type>Move</Type>
+            <TileIndex>0</TileIndex>
+            <Message>Advance to Go</Message>
+        </ActionCard>
+    </Deck>
+
+    <Bank>
+        <Money>100000</Money>
+        <Properties>
+            <Property> ,0</Property>
+        </Properties>
+    </Bank>
+
+    <Tile>
+        <TileNumber>0</TileNumber>
+        <TileType>GoTile</TileType>
+        <TileColor>Green</TileColor>
+        <LandedMoney>2</LandedMoney>
+        <PassedMoney>2</PassedMoney>
+        <NextTiles>1</NextTiles>
+    </Tile>
+
+    <Tile>
+        <TileNumber>1</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Brown</TileColor>
+        <Card>
+            <TitleDeed>Burger Joint</TitleDeed>
+            <TileColor>Brown</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,1,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>1</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>2</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>2</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Brown</TileColor>
+        <Card>
+            <TitleDeed>Pizza House</TitleDeed>
+            <TileColor>Brown</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,1,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>1</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>3</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>3</TileNumber>
+        <TileType>ChanceTile</TileType>
+        <TileName>Chance</TileName>
+        <NextTiles>4</NextTiles>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>4</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>LightBlue</TileColor>
+        <Card>
+            <TitleDeed>Candy Store</TitleDeed>
+            <TileColor>Blue</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>5</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>5</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>LightBlue</TileColor>
+        <Card>
+            <TitleDeed>Ice Cream Parlor</TitleDeed>
+            <TileColor>Blue</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>6</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>6</TileNumber>
+        <TileType>JailTile</TileType>
+        <TileName>Jail</TileName>
+        <NextTiles>7</NextTiles>
+    </Tile>
+
+    <Tile>
+        <TileNumber>7</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Pink</TileColor>
+        <Card>
+            <TitleDeed>Museum</TitleDeed>
+            <TileColor>Pink</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>8</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>8</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Pink</TileColor>
+        <Card>
+            <TitleDeed>Library</TitleDeed>
+            <TileColor>Pink</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>9</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>9</TileNumber>
+        <TileType>ChanceTile</TileType>
+        <TileName>Chance</TileName>
+        <NextTiles>10</NextTiles>
+    </Tile>
+
+    <Tile>
+        <TileNumber>10</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Orange</TileColor>
+        <Card>
+            <TitleDeed>Skate Park</TitleDeed>
+            <TileColor>Orange</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>11</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>11</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Orange</TileColor>
+        <Card>
+            <TitleDeed>Swimming Pool</TitleDeed>
+            <TileColor>Orange</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,2,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>2</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>12</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>12</TileNumber>
+        <TileType>FreeParkingTile</TileType>
+        <NextTiles>13</NextTiles>
+    </Tile>
+
+
+
+    <Tile>
+        <TileNumber>13</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Red</TileColor>
+        <Card>
+            <TitleDeed>Video Game Arcade</TitleDeed>
+            <TileColor>Red</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,3,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,6,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>3</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>14</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>14</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Red</TileColor>
+        <Card>
+            <TitleDeed>Cinema</TitleDeed>
+            <TileColor>Red</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,3,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,6,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>3</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>15</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>15</TileNumber>
+        <TileType>ChanceTile</TileType>
+        <TileName>Chance</TileName>
+        <NextTiles>16</NextTiles>
+    </Tile>
+
+    <Tile>
+        <TileNumber>16</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Yellow</TileColor>
+        <Card>
+            <TitleDeed>Toy Store</TitleDeed>
+            <TileColor>Yellow</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,3,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,6,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>3</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>17</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>17</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Yellow</TileColor>
+        <Card>
+            <TitleDeed>Pet Store</TitleDeed>
+            <TileColor>Yellow</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,3,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,6,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>3</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>18</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>18</TileNumber>
+        <TileType>GoToJailTile</TileType>
+        <TileName>Go to Jail</TileName>
+        <NextTiles>19</NextTiles>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>19</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Green</TileColor>
+        <Card>
+            <TitleDeed>Bowling Alley</TitleDeed>
+            <TileColor>Green</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,8,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>4</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>20</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>20</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Green</TileColor>
+        <Card>
+            <TitleDeed>Zoo</TitleDeed>
+            <TileColor>Green</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,4,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,8,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>4</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>21</NextTiles>
+        </Card>
+    </Tile>
+
+
+    <Tile>
+        <TileNumber>21</TileNumber>
+        <TileType>ChanceTile</TileType>
+        <TileName>Chance</TileName>
+        <NextTiles>22</NextTiles>
+    </Tile>
+
+    <Tile>
+        <TileNumber>22</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Blue</TileColor>
+        <Card>
+            <TitleDeed>Park Place</TitleDeed>
+            <TileColor>Blue</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,5,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,10,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>5</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>23</NextTiles>
+        </Card>
+    </Tile>
+
+    <Tile>
+        <TileNumber>23</TileNumber>
+        <TileType>BuildingTile</TileType>
+        <TileColor>Blue</TileColor>
+        <Card>
+            <TitleDeed>BoardWalk</TitleDeed>
+            <TileColor>Blue</TileColor>
+            <Upgrades>
+                <Upgrade>IncompleteColorSet,0,Booth,5,0,0</Upgrade>
+            </Upgrades>
+            <Upgrades>
+                <Upgrade>CompleteColorSet,0,Booth,10,0,0</Upgrade>
+            </Upgrades>
+            <TilePrice>5</TilePrice>
+            <TileMortgageValue>0</TileMortgageValue>
+            <NextTiles>24</NextTiles>
+        </Card>
+    </Tile>
+
+
+
+</MonopolyJr>
